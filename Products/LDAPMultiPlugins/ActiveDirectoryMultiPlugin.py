@@ -233,7 +233,10 @@ class ActiveDirectoryMultiPlugin(LDAPPluginBase):
         else:
             groups = R['results']
 
-        results = [x[attr][0] for x in groups if x['dn'].endswith(acl.groups_base)]
+        results = [
+            x[attr][0] for x in groups
+            if x['dn'].lower().endswith(acl.groups_base.lower())
+        ]
 
         ascii_results = []
         for result in results:
