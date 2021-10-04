@@ -1,4 +1,4 @@
-1.15.post4 (unreleased)
+1.15.post4 (2021-10-04)
 -----------------------
 
 - Fix filtering by group base DN which is now case-insensitive. [buchi]
