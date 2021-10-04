@@ -1,7 +1,7 @@
 1.15.post4 (unreleased)
 -----------------------
 
-- Nothing changed yet.
+- Fix filtering by group base DN which is now case-insensitive. [buchi]
 
 
 1.15.post3 (2018-02-11)
